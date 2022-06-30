@@ -4,11 +4,7 @@ This repository is intended to complete question 6
 
 ## Running Locally
 
-To run this application locally you will need to open the terminal on directory dashcommercetest and execute the following commands:
-
-``
-npm i axios
-``
+To run this application locally you will need to have Node 16.14.0 installed. With the node installed, open the terminal on directory dashcommercetest and execute the following commands:
 
 ``
 npm i express
