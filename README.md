@@ -20,13 +20,14 @@ node index.js
 
 The application will be running at the url: http://localhost:3000
 
-And to see the message 
+And to see the message: 
 
 ``
 {
   "mensagem": "My full name is Yan Andrade. I want this job!"
 }
 ``
+
 Acess: http://localhost:3000/dashcommercetest?user="dashcommerce"&password="chooseme"
 
 To get this message:
