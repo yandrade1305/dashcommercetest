@@ -8,7 +8,13 @@ To run this application locally you will need to open the terminal on directory 
 
 ``
 npm i axios
+``
+
+``
 npm i express
+``
+
+``
 node index.js
 ``
 
