@@ -1,21 +1,22 @@
-const axios = require("axios")
 const express = require("express")
 
 const app = express();
 
 app.get('/dashcommercetest', (req, res) => {
     const { user, password } = req.params;
-    if (user !== "dashcommerce" || password !== "chooseme") {
+
+    console.log();
+
+    if (req.query.user.includes("dashcommerce") && req.query.password.includes("chooseme")) {
+
         return res.status(200).json({
-            message: "Wrong Credentials"
-        });
-    } else {
-        return res.status(200).json({
-            message: "My full name is Yan Andrade. I want this job!"
+            mensagem: "My full name is Yan Andrade. I want this job!"
         });
     }
+    return res.status(200).json({
+        mensagem: "Wrong Credentials"
+    });
+
 });
 
 app.listen(3000, () => console.log("Executando em 3000"));
-
-// dashcommercetest?user="dashcommerce"&password="chooseme"
